@@ -1,0 +1,22 @@
+<h1 class="page-header">Accounts</h1>
+
+<div class="col-md-10 col-md-offset-2">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>deposit</th>
+        <th>credit card</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="account in accounts">
+        <td>{{account.id}}</td>
+        <td>{{account.name}}</td>
+        <td>{{account.deposit}}</td>
+        <td>{{account.cCard}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

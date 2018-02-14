@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Bank">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BankApp Angular</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+  <script src="js/route.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers/mainController.js"></script>
+  <script src="js/controllers/editController.js"></script>
+  <script src="js/services/dbService.js"></script>
+</head>
+
+<body>
+  <div class="jumbotron text-center">
+    <h1>BankApp Angular</h1>
+    <a href="#/" class="btn btn-primary">Accounts</a>
+    <a href="#/addAccount" class="btn btn-info">Add Account</a>
+    <a href="#/editDelete" class="btn btn-danger">Edit/Delete</a>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+
+        <ng-view></ng-view>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
